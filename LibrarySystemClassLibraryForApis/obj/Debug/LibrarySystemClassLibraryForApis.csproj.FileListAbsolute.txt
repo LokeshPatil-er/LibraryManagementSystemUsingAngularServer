@@ -1,0 +1,9 @@
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\LibrarySystemClassLibraryForApis.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\LibrarySystemClassLibraryForApis.pdb
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\obj\Debug\LibrarySystemClassLibraryForApis.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\obj\Debug\LibrarySystemClassLibraryForApis.pdb
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\obj\Debug\LibrarySystemClassLibraryForApis.csprojResolveAssemblyReference.cache

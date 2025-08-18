@@ -45,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,12 +55,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DAL\BooksIssueOps.cs" />
+    <Compile Include="DAL\BooksIssueDetailsOps.cs" />
     <Compile Include="DAL\BooksOps.cs" />
     <Compile Include="DAL\CoursesOps.cs" />
+    <Compile Include="DAL\IssueSupportFilesOps.cs" />
     <Compile Include="DAL\MembersOps.cs" />
     <Compile Include="DAL\PublishersOps.cs" />
     <Compile Include="Models\Books.cs" />
+    <Compile Include="Models\BooksIssue.cs" />
+    <Compile Include="Models\BooksIssueDetails.cs" />
     <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\IssueSupportFiles.cs" />
     <Compile Include="Models\Members.cs" />
     <Compile Include="Models\Publishers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

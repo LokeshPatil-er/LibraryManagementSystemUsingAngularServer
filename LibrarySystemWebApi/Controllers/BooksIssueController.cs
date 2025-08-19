@@ -251,7 +251,6 @@ namespace LibrarySystemWebApi.Controllers
             HttpResponseMessage response = null;
             try
             {
-                var model = new BookIssuesDetailList();
                 BooksIssueDetailsOps objBooksIssueDetailsOps = new BooksIssueDetailsOps();
 
                 if (bookIssueId > 0)
@@ -259,22 +258,27 @@ namespace LibrarySystemWebApi.Controllers
                     objBooksIssueDetailsOps.BookIssueId = bookIssueId;
                 }
 
-               List<BooksIssueDetails> bookIssueDetails = objBooksIssueDetailsOps.GetBookIssuesDetailList();
+                // fetch list
+                List<BooksIssueDetails> bookIssueDetails = objBooksIssueDetailsOps.GetBookIssuesDetailList();
 
-                if (model != null)
+                // get single object
+                var singleDetail = bookIssueDetails.FirstOrDefault();
+
+                if (singleDetail != null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, bookIssueDetails);
+                    response = Request.CreateResponse(HttpStatusCode.OK, singleDetail);
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, new List<BooksIssueDetails>());
+                    response = Request.CreateResponse(HttpStatusCode.NotFound, "No record found");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-
+                response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
             return response;
         }
+
     }
 }

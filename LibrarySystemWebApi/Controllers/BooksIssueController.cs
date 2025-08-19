@@ -200,7 +200,7 @@ namespace LibrarySystemWebApi.Controllers
                     }
 
                     scope.Complete();
-                   return response = Request.CreateResponse(HttpStatusCode.OK, new { success = true, message = "Book issue stored successfully." });
+                   return response = Request.CreateResponse(HttpStatusCode.OK, new { success = true, message = "Book issue details saved successfully." });
 
 
                 }
@@ -277,6 +277,34 @@ namespace LibrarySystemWebApi.Controllers
             {
                 response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
+            return response;
+        }
+
+        [HttpGet]
+        public HttpResponseMessage DownloadFile(string FilePath,string BookIssueId)
+        {
+            HttpResponseMessage response = null;
+            try
+            {
+                if (string.IsNullOrEmpty(FilePath) || string.IsNullOrEmpty(BookIssueId))
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest);
+                }
+                string fileIntialPath = ConfigurationManager.AppSettings["IssueFilesPath"];
+                string fullPath = Path.Combine(fileIntialPath, BookIssueId, FilePath);
+                if (!System.IO.File.Exists(fullPath))
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+
+                byte[] fileBytes = System.IO.File.ReadAllBytes(fullPath);
+                response = Request.CreateResponse(HttpStatusCode.OK, new { Content = new ByteArrayContent(fileBytes) });
+            }
+            catch(Exception ex)
+            {
+                response= Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+
             return response;
         }
 

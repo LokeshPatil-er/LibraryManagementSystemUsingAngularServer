@@ -39,7 +39,7 @@ namespace LibrarySystemClassLibraryForApis
         [Display(Name = "Contact:")]
         public string MemberContact { get; set; }
 
-        public int IssueQuantity { get; set; } = 1;
+      //  public int IssueQuantity { get; set; } = 1;
         public int ReturnQuantity { get; set; }
         public bool ReturnStatus { get; set; }
         public DateTime DueDate { get; set; }

@@ -62,6 +62,7 @@
     <Compile Include="DAL\IssueSupportFilesOps.cs" />
     <Compile Include="DAL\MembersOps.cs" />
     <Compile Include="DAL\PublishersOps.cs" />
+    <Compile Include="DAL\UsersOps.cs" />
     <Compile Include="Models\Books.cs" />
     <Compile Include="Models\BooksIssue.cs" />
     <Compile Include="Models\BooksIssueDetails.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Models\IssueSupportFiles.cs" />
     <Compile Include="Models\Members.cs" />
     <Compile Include="Models\Publishers.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

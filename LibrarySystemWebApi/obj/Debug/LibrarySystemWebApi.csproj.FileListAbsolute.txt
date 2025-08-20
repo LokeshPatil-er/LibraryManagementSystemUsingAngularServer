@@ -102,3 +102,21 @@ D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySyst
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemWebApi\obj\Debug\LibraryS.A1178AD5.Up2Date
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemWebApi\obj\Debug\LibrarySystemWebApi.dll
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemWebApi\obj\Debug\LibrarySystemWebApi.pdb
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\BCrypt.Net-Next.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Buffers.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Memory.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Numerics.Vectors.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.Tokens.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.Logging.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\BCrypt.Net-Next.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Buffers.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Memory.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Numerics.Vectors.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.Tokens.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.Logging.xml
+D:\LibrarySystemWebApi\LibrarySystemWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.xml

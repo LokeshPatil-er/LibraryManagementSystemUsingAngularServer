@@ -14,3 +14,11 @@ D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySyst
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemClassLibraryForApis\obj\Debug\LibraryS.CD82E208.Up2Date
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemClassLibraryForApis\obj\Debug\LibrarySystemClassLibraryForApis.dll
 D:\Rheal training WFH work\LibraryManagementSystemUsingAngularServer\LibrarySystemClassLibraryForApis\obj\Debug\LibrarySystemClassLibraryForApis.pdb
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\LibrarySystemWebApi\LibrarySystemClassLibraryForApis\bin\Debug\System.IdentityModel.Tokens.Jwt.xml

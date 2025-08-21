@@ -14,6 +14,7 @@ using System.Transactions;
 
 namespace LibrarySystemWebApi.Controllers
 {
+    [JwtAuthorization]
     public class BooksIssueController : ApiController
     {
         //Api for get all Active member list

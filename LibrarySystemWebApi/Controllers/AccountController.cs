@@ -13,38 +13,39 @@ namespace LibrarySystemWebApi.Controllers
     {
         //API for Login verifications 
         [HttpGet]
-        public HttpResponseMessage Login(Users users)
+        public HttpResponseMessage Login(string Email,string Password)
         {
             HttpResponseMessage response = null;
             try
             {
 
                 UsersOps objUsersOps = new UsersOps();
-                objUsersOps.Email = users.Email;
+                objUsersOps.Email = Email;
                 
                 if(!objUsersOps.Load())
                 {
                     return Request.CreateResponse(HttpStatusCode.NotFound);
                 }
 
-                if(!Bcry.Verify(users.Password,objUsersOps.Password))
+                if(!Bcry.Verify(Password, objUsersOps.Password))
                 {
                     return Request.CreateResponse(HttpStatusCode.BadRequest);
                 }
 
                 JWTTokenServices objJWTTokenServices = new JWTTokenServices();
-                string jwtToken = objJWTTokenServices.TokenGenertor(users.Email);
+                string jwtToken = objJWTTokenServices.TokenGenertor(Email);
                 
-                if(!String.IsNullOrEmpty(jwtToken))
+                if(String.IsNullOrEmpty(jwtToken))
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, new { success = true, jwtToken, objUsersOps.UserId });
+                    return Request.CreateResponse(HttpStatusCode.Unauthorized);
                 }
 
+                response = Request.CreateResponse(HttpStatusCode.OK, new { success = true, jwtToken, objUsersOps.UserId, objUsersOps.Name });
 
             }
             catch(Exception ex)
             {
-
+                return Request.CreateResponse(HttpStatusCode.InternalServerError);
             }
             return response;
         }

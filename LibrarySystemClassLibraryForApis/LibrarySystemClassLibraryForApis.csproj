@@ -63,6 +63,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\LibrarySystemWebApi\bin\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\LibrarySystemWebApi\bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,6 +86,7 @@
     <Compile Include="DAL\MembersOps.cs" />
     <Compile Include="DAL\PublishersOps.cs" />
     <Compile Include="DAL\UsersOps.cs" />
+    <Compile Include="Helper\JwtAuthorizationAttribute.cs" />
     <Compile Include="Helper\JWTTokenServices.cs" />
     <Compile Include="Models\Books.cs" />
     <Compile Include="Models\BooksIssue.cs" />

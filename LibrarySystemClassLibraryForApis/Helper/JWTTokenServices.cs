@@ -41,5 +41,34 @@ namespace LibrarySystemClassLibraryForApis
             }
             return token;
         }
+
+        public static ClaimsPrincipal TokenValidation(string token)
+        {
+            try
+            {
+                 var secretKey = Encoding.UTF8.GetBytes(key);
+
+                var tokenParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    RequireExpirationTime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(secretKey),
+                    ValidateIssuerSigningKey = true
+                };
+
+                var tokenHandler = new JwtSecurityTokenHandler();
+
+                SecurityToken securityToken;
+                var claimPrinciple = tokenHandler.ValidateToken(token, tokenParameters, out securityToken);
+                return claimPrinciple;
+
+            }
+            catch (Exception ex)
+            {
+                
+                return null;
+            }
+        }
     }
 }

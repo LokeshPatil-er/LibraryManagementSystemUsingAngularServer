@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace LibrarySystemWebApi.Controllers
 {
-    
+    [JwtAuthorization]
     public class BooksController : ApiController
     {
         //api for get booklist also apply filter on booklist data
